@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+nav {
+  position: fixed;
+  display: flex;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  font-size: 24px;
+  border: 1px solid rgb(rgb(20, 20, 20));
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logoThver1 {
+  width: 115px;
+  height: 48px;
+  top: 16px;
+  left: 104px;
+}
+
+#button1 {
+  width: 105px;
+  height: 80px;
+  left: 740;
+  bottom: 2px;
+  padding-top: 28px;
+  padding-right: 24px;
+  padding-bottom: 28px;
+  padding-left: 24px;
+  gap: 10px;
+}
+
+#button2 {
+  width: 73px;
+  height: 80px;
+  left: 845;
+  bottom: 2px;
+  padding-top: 28px;
+  padding-right: 24px;
+  padding-bottom: 28px;
+  padding-left: 24px;
+  gap: 10px;
+}
+
+#button3 {
+  width: 99px;
+  height: 80px;
+  left: 918;
+  bottom: 2px;
+  padding-top: 28px;
+  padding-right: 24px;
+  padding-bottom: 28px;
+  padding-left: 24px;
+  gap: 10px;
+}
+
+#button4 {
+  width: 123px;
+  height: 80px;
+  left: 1017;
+  bottom: 2px;
+  padding-top: 28px;
+  padding-right: 24px;
+  padding-bottom: 28px;
+  padding-left: 24px;
+  gap: 10px;
+}
+
+#button5 {
+  width: 172px;
+  height: 48px;
+  top: 16px;
+  left: 1164;
+  border-radius: 26px;
+  border: 1px;
+  padding-top: 12px;
+  padding-right: 24px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  gap: 10px;
+}
+
+.hero-content {
+  position: relative;
+  max-width: 600px;
+  top: 215px;
+  left: -400px;
+}
+
+.hero-content h1 {
+  font-size: 96px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  width: 265px;
+  height: 140px;
+  top: 475px;
+  left: 104px;
+}
+
+.hero-content h2 {
+  font-size: 24px;
+  opacity: 0.8;
+}
+
+.hero-content p {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+#photoBanner {
+  width: 1440px;
+  height: 841px;
+}
+
+.hero {
+  background-image: url("https://s3-alpha-sig.figma.com/img/3f44/9369/54367a2adadf79da6980be5495be0e60?Expires=1740355200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=lktwznyegAHlf6TvrjPLS-0xHVJlpRhi7NodWdfcuIKRwiIqgwEQeYWOybRKOOBP7aIrAW4Z4rFuEB9wW677gOaLP7Sq4pOrOknKPEz-A4H0iW5o~30~8Mzrpk5MOBgzIG454ON7jkY6Mi6D6I13hVBRWXDiG9gKmUAgfG~Zc3BLrvqvve5Hp~wketuqIAzrdn0JJfbxnqoZJ3UWj6vGbN3cNd~MCAgToSldJ-2TTMZWwOQkY9On4ZKokHbNxZl8EYigfIghuLs1M~D3dj4LTeiZfdcGScvb2V10WhE3D~6jLBiH5yN6Vm-Ez4CNqtKBgFUImiYxuqsoOOFmhrrQDg__"); /* เปลี่ยนเป็น URL รูปของคุณ */
+  background-size: cover;
+  background-position: center;
+  width: auto;
+  height: 841px; /* เต็มจอ */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  color: white;
+  position: relative;
+}
