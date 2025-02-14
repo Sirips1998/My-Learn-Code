@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Prompt", serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  width: 1440px;
+  height: 841px;
+  background: url("../img/120999152_112841783922289_3126674908420280537_n\ 1.svg") no-repeat;
+  background-position: center;
+  background-color: liear;
+}
+
+nav {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  position: absolute;
+  top: 30px;
+  justify-content: center; 
+  align-items: center;
+  right: 324px;
+  list-style: none;
+  gap: 40px;
+}
+
+/* nav {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+}
+
+
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 400px;
+  justify-content: space-between;
+} */
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  line-height: 24.19px;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo {
+  background: url("../img/Logo\ TH\ Ver.svg");
+  width: 115px;
+  height: 48px;
+  left: 104px;
+  position: absolute;
+}
+
+.nav-btn {
+  display: flex;
+  right: 104px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 172px;
+  height: 48px;
+  border: 1px solid white;
+  border-radius: 26px;
+  padding-top: 12px;
+  padding-right: 24px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  position: absolute;
+  gap: 10px;
+}
+
+.nav-btn a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.icon1 {
+  background: url("../img/Country.svg");
+  width: 24px;
+  height: 24px;
+}
+
+.icon2 {
+  background: url("../img/chevron\ 8.svg");
+  width: 24px;
+  height: 24px;
+}
+
+.header-Info {
+  width: 400px;
+  height: 288px;
+  margin-left: 104px;
+  position: absolute;
+  bottom: 423px;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-title1 {
+  background: url("../img/ขนมจีน.svg");
+  width: 260px;
+  height: 80px;
+  margin-top: 315px;
+}
+
+.header-title2 {
+  font-size: 24px;
+  color: white;
+  margin-top: 10px;
+  line-height: 36.29px;
+  position: absolute;
+  top: 410px;
+}
+
+.header-content p {
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 18.14px;
+  margin-top: 30px;
+  width: 355px;
+  height: 108px;
+  position: absolute;
+  top: 450px;
+}
+
+.powerful {
+  width: 1440px;
+  height: 267;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.powerful-concept {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.powerful-con1 {
+  width: 290px;
+  height: 171px;
+}
+
+.powerful-con2 {
+  width: 290px;
+  height: 171px;
+}
+
+.powerful-con3 {
+  width: 290px;
+  height: 171px;
+}
+
+.powerful-con4 {
+  width: 290px;
+  height: 171px;
+}
+
+.powerful-con5 {
+  width: 290px;
+  height: 171px;
+}
+
+.powerful-img1 {
+  width: 64px;
+  height: 64px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.powerful-img2 {
+  width: 64px;
+  height: 64px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.powerful-img3 {
+  width: 64px;
+  height: 64px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.powerful-img4 {
+  width: 64px;
+  height: 64px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.pw-p {
+  font-size: 16px;
+}
