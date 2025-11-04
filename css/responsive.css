@@ -1,0 +1,159 @@
+<link rel="stylesheet" href="css/homepage.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+
+/* =======================
+   Responsive for Homepage
+   Mobile-first
+   ======================= */
+
+/* root vars */
+:root{
+  --gutter: 16px;
+  --max-width: 1200px;
+  --accent: #e83b3b;
+  --muted: #666;
+}
+
+/* base container */
+.container {
+  width:100%;
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+  margin-left:auto;
+  margin-right:auto;
+  box-sizing: border-box;
+}
+
+/* ===================== NAVBAR ===================== */
+.navbar {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding:12px var(--gutter);
+  position:relative;
+  z-index:50;
+}
+.navbar .brand { font-weight:700; font-size:1.1rem; }
+.nav-links { display:none; gap:12px; list-style:none; margin:0; padding:0; }
+.menu-btn { display:inline-block; }
+
+/* ===================== HERO ===================== */
+/* assume hero markup: <header class="hero"><div class="hero-inner container"> ... </div></header> */
+.hero {
+  width:100%;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  color: #fff;
+  position:relative;
+  min-height: 60vh; /* mobile initial */
+  display:flex;
+  align-items:center;
+}
+
+/* dark overlay for readability */
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.45));
+  z-index:1;
+}
+.hero-inner {
+  position:relative;
+  z-index:2;
+  width:100%;
+  max-width:var(--max-width);
+}
+.hero-title {
+  font-size:1.6rem;
+  line-height:1.1;
+  margin:0 0 8px 0;
+}
+.hero-sub {
+  color: rgba(255,255,255,0.95);
+  font-size:0.95rem;
+  max-width:46ch;
+}
+
+/* ===================== ICON ROW (feature row) ===================== */
+.icon-row {
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:12px;
+  margin-top: 18px;
+  align-items:start;
+}
+.feature {
+  display:flex;
+  gap:10px;
+  align-items:flex-start;
+}
+.feature .icon { width:44px; height:44px; flex:0 0 44px; }
+
+/* ===================== GALLERY / CARDS ===================== */
+.grid-cards {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap:12px;
+  margin-top:16px;
+}
+.card {
+  background:#fff;
+  border-radius:8px;
+  overflow:hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  display:flex;
+  flex-direction:column;
+}
+.card img { width:100%; height:160px; object-fit:cover; display:block; }
+.card .card-body { padding:10px; font-size:0.9rem; color:var(--muted); }
+
+/* ===================== FOOTER / SPACING ===================== */
+.section {
+  padding: 28px var(--gutter);
+}
+
+/* ===================== TYPOGRAPHY SCALE ===================== */
+.h1 { font-size:1.6rem; }
+.h2 { font-size:1.1rem; }
+p { margin:0 0 10px 0; }
+
+/* ===================== MEDIA QUERIES ===================== */
+
+/* tablet-ish / iPad */
+@media (min-width: 768px) {
+  .hero { min-height: 70vh; }
+  .hero-title { font-size:2.2rem; }
+  .hero-sub { font-size:1rem; }
+  .icon-row { grid-template-columns: repeat(4, 1fr); gap:18px; }
+  .grid-cards { gap:16px; }
+  .card img { height:140px; }
+  .menu-btn { display:none; }
+  .nav-links { display:flex; }
+}
+
+/* laptop */
+@media (min-width: 1024px) {
+  .container { max-width: var(--max-width); }
+  .hero { min-height: 80vh; background-attachment: fixed; }
+  .hero-title { font-size: 3rem; }
+  .hero-sub { font-size:1.05rem; max-width: 50ch; }
+  .grid-cards { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:20px; }
+  .card img { height:160px; }
+}
+
+/* wide desktop */
+@media (min-width:1440px) {
+  .hero-title { font-size: 3.4rem; }
+  .hero-sub { font-size:1.1rem; }
+}
+
+/* small fixes for very small phones */
+@media (max-width: 420px) {
+  .hero-title { font-size:1.3rem; }
+  .hero-sub { font-size:0.9rem; }
+  .card img { height:120px; }
+}
