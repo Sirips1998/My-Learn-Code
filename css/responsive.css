@@ -154,3 +154,116 @@ p { margin:0 0 10px 0; }
   .hero-sub { font-size:0.9rem; }
   .card img { height:120px; }
 }
+
+
+/* ========== mobile (ต่ำกว่า 768px) ========== */
+@media (max-width: 767px) {
+  /* header อย่าล็อกสูง */
+  header {
+    height: auto;
+    min-height: 60vh;
+    background-size: cover;
+  }
+
+  /* container ให้เต็มจอ */
+  .container,
+  .container1,
+  .top-Menu {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0 16px;
+  }
+
+  /* navbar */
+  .nav-b {
+    width: 100%;
+    height: auto;
+    padding: 12px 16px;
+    gap: 12px;
+  }
+
+  /* เมนูอย่าล็อกกว้าง + อย่าดันด้วย margin-left 490px */
+  nav ul {
+    width: 100%;
+    margin-left: 0;
+    justify-content: flex-start;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  /* กล่องเปลี่ยนเป็นเรียงตั้ง */
+  .pw-box,
+  .box-1,
+  .box-2 {
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+    gap: 16px;
+    height: auto;
+  }
+
+  .pw-item,
+  .box-1 > div,
+  .box-2 > div {
+    width: 100%;
+  }
+
+  /* ตัวหนังสือ hero */
+  .header-info {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 200px; /* ปรับเอา */
+  }
+
+  .header-titel1 h1 {
+    font-size: 2.8rem;
+    line-height: 1.1;
+  }
+
+  .header-titel2 h2 {
+    font-size: 1.1rem;
+  }
+
+  .header-content p {
+    font-size: 0.9rem;
+  }
+}
+
+/* ========== tablet / iPad (768 - 1023px) ========== */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  header {
+    height: auto;
+    min-height: 70vh;
+  }
+
+  .nav-b {
+    width: 100%;
+    padding: 16px 32px;
+  }
+
+  nav ul {
+    margin-left: 0;
+    gap: 20px;
+  }
+
+  .header-info {
+    margin-left: 32px;
+    width: 60%;
+  }
+
+  .box-1,
+  .box-2 {
+    max-width: 100%;
+    margin-left: 0;
+    padding: 0 32px;
+    flex-wrap: wrap;
+  }
+}
+
+/* ========== laptop ขึ้นไป ========== */
+@media (min-width: 1024px) {
+  /* ตรงนี้จะปล่อยให้ใช้ค่าหลักใน homepage.css ไปเลย
+     แต่ถ้าอยากให้ยืดหยุ่นขึ้นก็ลด margin-left:104px ออกทีละนิดได้ */
+}
