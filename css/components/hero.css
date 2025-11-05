@@ -1,0 +1,64 @@
+/* hero.css */
+.header-info {
+  padding: 24px 0;
+  max-width: 560px;
+}
+.header-titel1 h1 {
+  font-family: "KaLong", sans-serif;
+  font-size: clamp(28px, 8vw, 96px);
+  line-height: 1.05;
+  color: #fff;
+  margin-bottom: 12px;
+}
+.header-titel2 h2 {
+  font-size: clamp(14px, 2.4vw, 24px);
+  color: #fff;
+  margin-bottom: 12px;
+}
+.header-content p {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 44ch;
+}
+
+header {
+  height: 841px;
+  background: url("../../img/Bg.svg") no-repeat center/cover;
+  position: relative;
+}
+
+/* hero.css — overlay แบบ pseudo-element */
+header {
+  position: relative;
+  background: url("../../img/Bg.svg") center/cover no-repeat;
+  background-size: cover;
+  min-height: 680px; /* ปรับตามต้องการ */
+  color: #fff;
+  overflow: hidden;
+}
+
+/* overlay ด้านบนภาพ ให้ข้อความอ่านง่าย */
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* top:0; right:0; bottom:0; left:0 */
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.55) 0%,
+    rgba(0, 0, 0, 0.35) 30%,
+    rgba(0, 0, 0, 0.25) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 1;
+  pointer-events: none; /* ให้คลิกทะลุได้ */
+}
+
+/* ให้เนื้อหา (text) อยู่บน overlay */
+.hero-inner,
+.header-info {
+  position: relative;
+  z-index: 2;
+}
+
+/* ถ้าต้องการ overlay แบบทึบมากขึ้น ให้ลดค่า rgba alpha
+   หรือเปลี่ยน direction/สีได้ตามต้องการ */

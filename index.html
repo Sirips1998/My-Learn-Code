@@ -4,52 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>อีสเต๊อะ</title>
-    <link rel="stylesheet" href="css/homepage.css" />
-    <link rel="Icon" type="image/x-icon" href="img/icon.svg" />
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/homepage.css">
-    <link rel="stylesheet" href="css/responsive.css">
-
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <header>
       <div class="container">
-        <nav>
-          <div class="nav-b">
-            <img class="logoEatter" src="img/Logo TH Ver.svg" />
-            <ul>
-              <li class="li1"><a href="#"></a>หน้าหลัก</li>
-              <li class="li2"><a href="#"></a>เมนู</li>
-              <li class="li3"><a href="#"></a>ข่าวสาร</li>
-              <li class="li4"><a href="#"></a>เกี่ยวกับเรา</li>
-            </ul>
-            <section class="nav-Hbtn">
-              <div class="nav-btn">
-                <img class="logobunton1" src="img/Country.svg" />
-                <a href="#" class="Changelanguage">English</a>
-                <img class="logobunton1" src="img/Right_Arrow_4_.svg" />
-              </div>
-            </section>
-          </div>
+        <nav class="nav-b">
+          <img class="logoEatter" src="img/Logo TH Ver.svg" />
+          <ul>
+            <li><a href="#">หน้าหลัก</a></li>
+            <li><a href="#">เมนู</a></li>
+            <li><a href="#">ข่าวสาร</a></li>
+            <li><a href="#">เกี่ยวกับเรา</a></li>
+          </ul>
+          <section class="nav-Hbtn">
+            <div class="nav-btn">
+              <img class="logobunton1" src="img/Country.svg" />
+              <a href="#" class="Changelanguage">English</a>
+              <img class="logobunton1" src="img/Right_Arrow_4_.svg" />
+            </div>
+          </section>
         </nav>
-        <section class="header-info">
-          <div class="header-titel1">
-            <h1>ขนมจีน</h1>
+      </div>
+
+      <!-- hero section -->
+      <div class="hero-bg">
+        <div class="container hero-inner">
+          <div class="header-info">
+            <div class="header-titel1">
+              <h1>ขนมจีน</h1>
+            </div>
+            <div class="header-titel2">
+              <h2>สูตรลับคนเมือง</h2>
+            </div>
+            <div class="header-content">
+              <p>
+                บาร์บี้คลิปเกมส์ไมเกรน วอลซ์นายแบบแกงค์สามแยก สังโฆ เซ็กส์เบลอ
+                <br />ธุหร่ำแจ็กพอต ยนตรกรรม แยมโรลแกสโซฮอล์น้องใหม่
+              </p>
+            </div>
           </div>
-          <div class="header-titel2">
-            <h2>สูตรลับคนเมือง</h2>
-          </div>
-          <div class="header-content">
-            <p>
-              บาร์บี้คลิปเกมส์ไมเกรน วอลซ์นายแบบแกงค์สามแยก สังโฆ เซ็กส์เบลอ
-              <br />ธุหร่ำแจ็กพอต ยนตรกรรม แยมโรลแกสโซฮอล์น้องใหม่ <br />
-              ยูโรแพทเทิร์นโอวัลตินออเดอร์สุริยยาตร์ ควิกพูล เดอะโหลยโท่ยอีสต์
-              <br />มวลชนคอนเฟิร์มพิซซ่าต่อรองเหมย ชินบัญชรดีมานด์
-              <br />สแควร์ซีนีเพล็กซ์ตะหงิดซีเนียร์ชาร์ต แชมเปี้ยนเจ็ต
-              แผดเผาแม่ค้า <br />ซีอีโอคอมเมนท์หลวงปู่
-            </p>
-          </div>
-        </section>
+        </div>
       </div>
     </header>
 
@@ -89,53 +84,42 @@
     <section class="top-Menu">
       <p class="textp">Lorem ipsum</p>
       <h2 class="texth">เมนูเฉพาะของเราที่โดดเด่น</h2>
-      <div class="box-1">
-        <div class="box-menu">
-          <div class="box-item">
-            <img src="img/Mask group 1.svg" alt="" />
-            <h3>ชุด SET น้ำพริก</h3>
-            <p>น้ำพริกอ่อง+น้ำพริกข่า+แคปหมู</p>
-          </div>
+
+      <div class="menu-grid">
+        <div class="card">
+          <img src="img/Mask group 1.svg" alt="ชุด SET น้ำพริก" />
+          <h3>ชุด SET น้ำพริก</h3>
+          <p>น้ำพริกอ่อง+น้ำพริกข่า+แคปหมู</p>
         </div>
-        <div class="box-menu">
-          <div class="box-item">
-            <img src="img/Mask group 2.svg" alt="" />
-            <h3>ชุด SET ไส้อั่วสูตรต้นตำหรับ</h3>
-            <p>น้ำพริกอ่อง+น้ำพริกข่า+แคปหมู</p>
-          </div>
+
+        <div class="card">
+          <img src="img/Mask group 2.svg" alt="ชุด SET ไส้อั่ว" />
+          <h3>ชุด SET ไส้อั่วสูตรต้นตำหรับ</h3>
+          <p>น้ำพริกอ่อง+น้ำพริกข่า+แคปหมู</p>
         </div>
-        <div class="box-menu">
-          <div class="box-item">
-            <img src="img/Mask group 3.svg" alt="" />
-            <h3>ชุด SET น้ำพริก</h3>
-            <p>น้ำพริกอ่อง+น้ำพริกข่า+แคปหมู</p>
-          </div>
+
+        <div class="card">
+          <img src="img/Mask group 3.svg" alt="ชุด SET น้ำพริก" />
+          <h3>ชุด SET น้ำพริก</h3>
+          <p>น้ำพริกอ่อง+น้ำพริกข่า+แคปหมู</p>
         </div>
-      </div>
-      <div class="box-2">
-        <div class="box-menu">
-          <div class="box-item">
-            <img src="img/Mask group 4.svg" alt="" />
-            <h3>ชุด SET น้ำพริก</h3>
-            <p>น้ำพริกอ่อง+น้ำพริกข่า+แคปหมู</p>
-          </div>
+
+        <div class="card">
+          <img src="img/Mask group 4.svg" alt="..." />
+          <h3>ชุด SET น้ำพริก</h3>
+          <p>น้ำพริกอ่อง+น้ำพริกข่า+แคปหมู</p>
         </div>
-        <div class="box-menu">
-          <div class="box-item">
-            <img src="img/Mask group 5.svg" alt="" />
-            <h3>ชุด SET ไส้อั่วสูตรต้นตำหรับ</h3>
-            <p>น้ำพริกอ่อง+น้ำพริกข่า+แคปหมู</p>
-          </div>
+        <div class="card">
+          <img src="img/Mask group 5.svg" alt="..." />
+          <h3>ชุด SET ไส้อั่วสูตรต้นตำหรับ</h3>
+          <p>น้ำพริกอ่อง+น้ำพริกข่า+แคปหมู</p>
         </div>
-        <div class="box-menu">
-          <div class="box-item">
-            <img src="img/Mask group 6.svg" alt="" />
-            <h3>ชุด SET น้ำพริก</h3>
-            <p>น้ำพริกอ่อง+น้ำพริกข่า+แคปหมู</p>
-          </div>
+        <div class="card">
+          <img src="img/Mask group 6.svg" alt="..." />
+          <h3>ชุด SET น้ำพริก</h3>
+          <p>น้ำพริกอ่อง+น้ำพริกข่า+แคปหมู</p>
         </div>
       </div>
-     
     </section>
   </body>
 </html>

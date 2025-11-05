@@ -1,0 +1,19 @@
+/* layout.css */
+.container {
+  width: 100%;
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 var(--g);
+}
+.top-Menu,
+.container1 {
+  width: 100%;
+}
+
+/* remove fixed heights; use min-height for hero */
+.hero,
+header {
+  min-height: 55vh;
+  background-size: cover;
+  background-position: center;
+}

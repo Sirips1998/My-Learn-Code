@@ -1,0 +1,60 @@
+/* menu-grid */
+.menu-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+/* each card */
+.card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: left;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+/* image */
+.card img {
+  width: 100%;
+  height: 180px; /* ปรับตามต้องการ */
+  object-fit: cover;
+  display: block;
+}
+
+/* content */
+.card h3 {
+  font-family: "Prompt", sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 12px 16px 6px;
+  color: #303030;
+}
+
+.card p {
+  font-family: "Prompt", sans-serif;
+  font-weight: 400; /* Regular */
+  font-size: 0.75rem; /* ≈ 12px */
+  line-height: 1.4;
+  color: #7f7f7f;
+  margin: 0 16px 16px;
+}
+
+/* hover effect */
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* small tweak for very small phones */
+@media (max-width: 380px) {
+  .card img {
+    height: 140px;
+  }
+}

@@ -1,0 +1,15 @@
+/* main.css */
+
+/* ===== Base styles ===== */
+@import "base.css";
+
+/* ===== Components ===== */
+@import "components/navbar.css";
+@import "components/hero.css";
+@import "components/pw-box.css";
+@import "components/card.css";
+@import "components/footer.css";
+
+/* ===== Layout & Responsive ===== */
+@import "layout.css";
+@import "responsive.css";

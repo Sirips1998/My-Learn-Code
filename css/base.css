@@ -1,0 +1,42 @@
+/* base.css */
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700&display=swap");
+
+@font-face {
+  font-family: "KaLong";
+  src: url("../MnKalong/MNKaLong.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KaLong";
+  src: url("../MnKalong/MNKaLong Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+:root {
+  --g: 16px;
+  --max: 1200px;
+  --accent: #e83b3b;
+  --muted: #7f7f7f;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Prompt", sans-serif;
+}
+html {
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px; /* กำหนดความกว้างสูงสุด */
+  margin: 0 auto; /* จัดให้อยู่ตรงกลาง */
+  padding: 0 104px; /* เว้นระยะขอบซ้าย-ขวาเท่ากัน */
+}
