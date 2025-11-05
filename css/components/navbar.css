@@ -85,3 +85,86 @@ nav ul li a:hover {
   position: relative;
   z-index: 5;
 }
+
+
+/* base layout for nav */
+.nav-b{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  justify-content:space-between;
+  padding: 18px 0;
+  position:relative;
+  z-index: 20;
+}
+
+/* logo */
+.logoEatter img{ width:115px; height:auto; display:block; }
+
+/* normal desktop links */
+.nav-links{
+  display:flex;
+  gap:28px;
+  list-style:none;
+  margin:0 auto; /* keep centered-ish */
+  padding:0;
+}
+.nav-links li a{
+  color:#fff;
+  text-decoration:none;
+  padding:8px 6px;
+  display:inline-block;
+}
+
+/* right side */
+.nav-right{ display:flex; align-items:center; gap:12px; }
+
+/* hamburger (hidden on desktop) */
+.hamburger{
+  display:none;
+  background:transparent;
+  border:0;
+  cursor:pointer;
+  padding:8px;
+}
+.hamburger .bar{
+  display:block;
+  width:22px;
+  height:2px;
+  background:#fff;
+  margin:4px 0;
+  transition:all .2s ease;
+}
+
+/* ---------- TABLET (iPad) ---------- */
+@media (min-width:768px) and (max-width:1023px){
+  .nav-links{ gap:20px; }
+  .logoEatter img{ width:100px; }
+  .nav-b{ padding:16px 0; }
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width:767px){
+  /* show hamburger, hide default links */
+  .hamburger{ display:block; }
+  .nav-links{ 
+    display:none; /* hide until opened */
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background: rgba(0,0,0,0.92);
+    padding: 16px;
+    flex-direction: column;
+    gap:12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  }
+  .nav-links.open{ display:flex; }
+  .nav-links li a{ color:#fff; padding:10px; border-radius:6px; }
+
+  /* nav-right (language) — move into menu or keep on header as tiny icon */
+  .nav-right{ display:none; } /* ถ้าอยากให้ language อยู่ใน dropdown ให้คัดลอกลง .nav-links */
+
+  /* smaller logo */
+  .logoEatter img{ width:90px; }
+}

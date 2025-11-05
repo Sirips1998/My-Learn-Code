@@ -8,45 +8,31 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <nav class="nav-b">
-          <img class="logoEatter" src="img/Logo TH Ver.svg" />
-          <ul>
-            <li><a href="#">หน้าหลัก</a></li>
-            <li><a href="#">เมนู</a></li>
-            <li><a href="#">ข่าวสาร</a></li>
-            <li><a href="#">เกี่ยวกับเรา</a></li>
-          </ul>
-          <section class="nav-Hbtn">
-            <div class="nav-btn">
-              <img class="logobunton1" src="img/Country.svg" />
-              <a href="#" class="Changelanguage">English</a>
-              <img class="logobunton1" src="img/Right_Arrow_4_.svg" />
-            </div>
-          </section>
-        </nav>
-      </div>
+  <div class="container">
+    <nav class="nav-b">
+      <a href="/" class="logoEatter"><img src="img/Logo TH Ver.svg" alt="logo"></a>
 
-      <!-- hero section -->
-      <div class="hero-bg">
-        <div class="container hero-inner">
-          <div class="header-info">
-            <div class="header-titel1">
-              <h1>ขนมจีน</h1>
-            </div>
-            <div class="header-titel2">
-              <h2>สูตรลับคนเมือง</h2>
-            </div>
-            <div class="header-content">
-              <p>
-                บาร์บี้คลิปเกมส์ไมเกรน วอลซ์นายแบบแกงค์สามแยก สังโฆ เซ็กส์เบลอ
-                <br />ธุหร่ำแจ็กพอต ยนตรกรรม แยมโรลแกสโซฮอล์น้องใหม่
-              </p>
-            </div>
-          </div>
-        </div>
+      <!-- hamburger สำหรับ mobile -->
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+
+      <!-- ลิงก์เมนู -->
+      <ul class="nav-links">
+        <li><a href="#home">หน้าหลัก</a></li>
+        <li><a href="#menu">เมนู</a></li>
+        <li><a href="#news">ข่าวสาร</a></li>
+        <li><a href="#about">เกี่ยวกับเรา</a></li>
+      </ul>
+
+      <!-- ปุ่มขวา (language / login ฯลฯ) -->
+      <div class="nav-right">
+        <button class="lang-btn">English ▾</button>
       </div>
-    </header>
+    </nav>
+  </div>
+</header>
+
 
     <section class="powerful">
       <div class="container1">
